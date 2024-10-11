@@ -1,0 +1,361 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF; /* Color rosado */
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Sección de bienvenida */
+#inicio {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.bienvenida-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.bienvenida-texto {
+    max-width: 50%;
+}
+
+.bienvenida-texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF; /* Cambiado a un color azul */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s forwards; /* Agregar animación */
+}
+
+.bienvenida-texto p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.bienvenida-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Finaliza visible */
+    }
+}
+
+/* Sección de especialidades */
+#especialidades {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#especialidades h2 {
+    font-size: 2.2em;
+    color: #007BFF;
+    margin-bottom: 30px;
+}
+
+.especialidades-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.especialidad {
+    width: 22%; /* Ajustado para mostrar más especialidades */
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.especialidad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.especialidad img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.especialidad h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff69b4;
+}
+
+.especialidad p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    color: #2262d8; /* Color llamativo para el título de la sección */
+    font-size: 2em; /* Tamaño del título */
+    text-align: center; /* Centrar título de la sección */
+}
+
+/* Título de información de contacto */
+.titulo-contacto {
+    color: #007BFF; /* Color para el título de información de contacto */
+    font-size: 1.5em; /* Tamaño del título */
+    text-align: center; /* Centrar título de información de contacto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s forwards; /* Agregar animación de desvanecimiento */
+}
+
+/* Contenedor de contacto */
+.contacto-container {
+    display: flex; /* Usar flexbox para la alineación */
+    justify-content: center; /* Centrar contenido */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    gap: 400px; /* Espacio entre la información y el mapa */
+}
+
+/* Información de contacto */
+.contacto-info {
+    color: #2262d8;
+    font-size: 1.5em;
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-left: -10px; /* Ajuste hacia la izquierda */
+}
+
+/* Texto de información de contacto */
+.contacto-info p {
+    color: #000000; /* Color del texto */
+    font-size: 0.8em; /* Tamaño del texto */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s forwards; /* Agregar animación de desvanecimiento */
+    animation-delay: 0.5s; /* Retraso para la animación */
+}
+
+/* Mapa */
+.map {
+    text-align: center; /* Alinear mapa a la derecha */
+}
+
+.map h3 {
+    color: #2262d8; /* Color llamativo para el título del mapa */
+    font-size: 1.5em; /* Tamaño del título */
+    opacity: 0; /* Comienza invisible */
+    animation: fadeIn 1s forwards; /* Agregar animación de desvanecimiento */
+    animation-delay: 0.5s; /* Retraso para la animación */
+}
+
+/* Pie de página */
+footer {
+    background-color: #007BFF; /* Color rosado */
+    background-color: #007BFF; /* Color del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    text-align: center; /* Centrar texto */
+    padding: 15px 0; /* Espaciado vertical */
+}
+
+#promociones {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#promociones h2 {
+    color: #2262d8; /* Color llamativo para el título de la sección */
+    font-size: 2.5em; /* Tamaño del título */
+    text-align: center; /* Centrar título de la sección */
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.carrusel {
+    display: flex;
+    align-items: center; /* Centrar verticalmente los botones */
+}
+
+.promociones-contenedor {
+    display: flex;
+    overflow: hidden; /* Ocultar el desbordamiento */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+    scroll-behavior: smooth; /* Añadir desplazamiento suave */
+}
+
+.promocion {
+    min-width: 200px; /* Ancho mínimo para cada tarjeta */
+    background-color: #f9f9f9;
+    padding: 20px; /* Aumenta el padding */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Espacio entre las promociones */
+}
+
+.promocion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.promocion h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2262d8; /* Color para el título de la promoción */
+}
+
+.promocion p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+.btn-detalle {
+    display: inline-block;
+    background-color: #ff69b4; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    font-weight: bold; /* Negrita para el texto del botón */
+}
+
+.btn-detalle:hover {
+    background-color: #ff3f8e; /* Color de fondo al pasar el mouse */
+}
+
+
+.btn-carrusel {
+    background-color: transparent; /* Sin fondo para los botones */
+    border: none; /* Sin borde */
+    font-size: 2em; /* Tamaño del ícono */
+    color: #2262d8; /* Color de los íconos */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin: 0 10px; /* Espaciado entre los botones y el carrusel */
+}
+
+.btn-carrusel:hover {
+    color: #ff69b4; /* Cambia el color al pasar el mouse */
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promociones-contenedor {
+    display: flex;
+    overflow: hidden; 
+    width: 80%; 
+    scroll-behavior: smooth; 
+}
+
+.promocion {
+    min-width: 200px; 
+    background-color: #f9f9f9;
+    padding: 20px; 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; 
+    transition: transform 0.3s; 
+}
+
+.promocion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-carrusel {
+    background-color: transparent; 
+    border: none; 
+    font-size: 2em; 
+    color: #2262d8; 
+    cursor: pointer; 
+}
+
+/* Detalles de promoción */
+.detalles-promocion {
+    color: #007BFF; /* Color azul para destacar la sección */
+    font-weight: bold;
+    margin-top: 15px; /* Espacio superior */
+}
+
+.lista-detalles {
+    list-style-type: disc; /* Tipo de lista */
+    margin: 10px 0; /* Margen vertical */
+    padding-left: 20px; /* Espaciado a la izquierda */
+    color: #555; /* Color del texto de la lista */
+    font-size: 1em; /* Tamaño del texto */
+}
+
+.lista-detalles li {
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}

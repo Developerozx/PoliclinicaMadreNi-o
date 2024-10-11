@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?68903275');
+  src: url('../font/fontello.eot?68903275#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?68903275') format('woff2'),
+       url('../font/fontello.woff?68903275') format('woff'),
+       url('../font/fontello.ttf?68903275') format('truetype'),
+       url('../font/fontello.svg?68903275#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?68903275#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); /* Corregido el valor de box-shadow */
+  z-index: 100; 
+}
+
+.btp-wsp:hover{
+  text-decoration: none;
+  color:#0df053;
+  background-color: #fff;
+
+}
+
+ .icon-whatsapp:before { content: '\f232'; } /* '' */
